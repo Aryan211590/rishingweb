@@ -613,156 +613,7 @@ const Cart = () => {
                     </article>
                   </div>
                   <div className="col custom-col-2 mb-30">
-                    <article className="product__card">
-                      <div className="product__card--thumbnail product__swiper--column1 swiper">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <a
-                              className="product__card--thumbnail__link display-block"
-                              href="product-details.html"
-                            >
-                              <img
-                                className="product__card--thumbnail__img product__primary--img display-block"
-                                src="assets/img/product/product3.webp"
-                                alt="product-img"
-                              />
-                              <img
-                                className="product__card--thumbnail__img product__secondary--img display-block"
-                                src="assets/img/product/product4.webp"
-                                alt="product-img"
-                              />
-                            </a>
-                          </div>
-                          <div className="swiper-slide">
-                            <a
-                              className="product__card--thumbnail__link display-block"
-                              href="product-details.html"
-                            >
-                              <img
-                                className="product__card--thumbnail__img product__primary--img display-block"
-                                src="assets/img/product/product5.webp"
-                                alt="product-img"
-                              />
-                              <img
-                                className="product__card--thumbnail__img product__secondary--img display-block"
-                                src="assets/img/product/product6.webp"
-                                alt="product-img"
-                              />
-                            </a>
-                            <div className="product__badge">
-                              <span className="product__badge--items sale">
-                                SALE
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <ul className="product__card--action d-flex align-items-center justify-content-center">
-                          <li className="product__card--action__list">
-                            <a
-                              className="product__card--action__btn"
-                              title="Wishlist"
-                              href="wishlist.html"
-                            >
-                              <svg
-                                className="product__card--action__btn--svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="25.51"
-                                height="22.443"
-                                viewBox="0 0 512 512"
-                              >
-                                <path
-                                  d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={32}
-                                />
-                              </svg>
-                              <span className="visually-hidden">Wishlist</span>
-                            </a>
-                          </li>
-                          <li className="product__card--action__list">
-                            <a
-                              className="product__card--action__btn"
-                              title="Quick View"
-                              data-open="modal1"
-                              href="javascript:void(0)"
-                            >
-                              <svg
-                                className="product__card--action__btn--svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24.51"
-                                height="22.443"
-                                viewBox="0 0 512 512"
-                              >
-                                <path
-                                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeMiterlimit={10}
-                                  strokeWidth={32}
-                                />
-                                <path
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeLinecap="round"
-                                  strokeMiterlimit={10}
-                                  strokeWidth={32}
-                                  d="M338.29 338.29L448 448"
-                                />
-                              </svg>
-                              <span className="visually-hidden">
-                                Quick View
-                              </span>
-                            </a>
-                          </li>
-                          <li className="product__card--action__list">
-                            <a
-                              className="product__card--action__btn"
-                              title="Compare"
-                              href="compare.html"
-                            >
-                              <svg
-                                className="product__card--action__btn--svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="21.51"
-                                height="21.443"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                              >
-                                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
-                              </svg>
-                              <span className="visually-hidden">Compare</span>
-                            </a>
-                          </li>
-                        </ul>
-                        <div className="swiper__nav--btn swiper-button-next" />
-                        <div className="swiper__nav--btn swiper-button-prev" />
-                      </div>
-                      <div className="product__card--content text-center">
-                        <span className="product__card--meta__tag">
-                          Watch,Woman
-                        </span>
-                        <h3 className="product__card--title">
-                          <a href="product-details.html">Advanced Analytic </a>
-                        </h3>
-                        <div className="product__card--price">
-                          <span className="current__price">$245</span>
-                          <span className="price__divided" />
-                          <span className="old__price"> $356</span>
-                        </div>
-                        <a
-                          className="product__card--btn primary__btn"
-                          href="cart.html"
-                        >
-                          Add To Card
-                        </a>
-                      </div>
-                    </article>
-                  </div>
-                  <div className="col custom-col-2 mb-30">
-                    <article className="product__card">
+                  <article className="product__card">
                       <div className="product__card--thumbnail">
                         <a
                           className="product__card--thumbnail__link display-block"
@@ -770,12 +621,12 @@ const Cart = () => {
                         >
                           <img
                             className="product__card--thumbnail__img product__primary--img display-block"
-                            src="assets/img/product/product5.webp"
+                            src="assets/img/product/product1.webp"
                             alt="product-img"
                           />
                           <img
                             className="product__card--thumbnail__img product__secondary--img display-block"
-                            src="assets/img/product/product6.webp"
+                            src="assets/img/product/product2.webp"
                             alt="product-img"
                           />
                         </a>
@@ -871,9 +722,7 @@ const Cart = () => {
                           Watch,Woman
                         </span>
                         <h3 className="product__card--title">
-                          <a href="product-details.html">
-                            Dolor sit consectetur.{" "}
-                          </a>
+                          <a href="product-details.html">Advanced To Watch </a>
                         </h3>
                         <div className="product__card--price">
                           <span className="current__price">$245</span>
@@ -889,50 +738,24 @@ const Cart = () => {
                       </div>
                     </article>
                   </div>
-                  <div className="col custom-col-2 mb-30 d-sm-block d-lg-none d-xl-block">
-                    <article className="product__card">
-                      <div className="product__card--thumbnail product__swiper--column1 swiper">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <a
-                              className="product__card--thumbnail__link display-block"
-                              href="product-details.html"
-                            >
-                              <img
-                                className="product__card--thumbnail__img product__primary--img display-block"
-                                src="assets/img/product/product2.webp"
-                                alt="product-img"
-                              />
-                              <img
-                                className="product__card--thumbnail__img product__secondary--img display-block"
-                                src="assets/img/product/product1.webp"
-                                alt="product-img"
-                              />
-                            </a>
-                          </div>
-                          <div className="swiper-slide">
-                            <a
-                              className="product__card--thumbnail__link display-block"
-                              href="product-details.html"
-                            >
-                              <img
-                                className="product__card--thumbnail__img product__primary--img display-block"
-                                src="assets/img/product/product4.webp"
-                                alt="product-img"
-                              />
-                              <img
-                                className="product__card--thumbnail__img product__secondary--img display-block"
-                                src="assets/img/product/product3.webp"
-                                alt="product-img"
-                              />
-                            </a>
-                            <div className="product__badge">
-                              <span className="product__badge--items sale">
-                                SALE
-                              </span>
-                            </div>
-                          </div>
-                        </div>
+                  <div className="col custom-col-2 mb-30">
+                  <article className="product__card">
+                      <div className="product__card--thumbnail">
+                        <a
+                          className="product__card--thumbnail__link display-block"
+                          href="product-details.html"
+                        >
+                          <img
+                            className="product__card--thumbnail__img product__primary--img display-block"
+                            src="assets/img/product/product1.webp"
+                            alt="product-img"
+                          />
+                          <img
+                            className="product__card--thumbnail__img product__secondary--img display-block"
+                            src="assets/img/product/product2.webp"
+                            alt="product-img"
+                          />
+                        </a>
                         <ul className="product__card--action d-flex align-items-center justify-content-center">
                           <li className="product__card--action__list">
                             <a
@@ -1014,22 +837,149 @@ const Cart = () => {
                             </a>
                           </li>
                         </ul>
-                        <div className="swiper__nav--btn swiper-button-next" />
-                        <div className="swiper__nav--btn swiper-button-prev" />
+                        <div className="product__badge">
+                          <span className="product__badge--items sale">
+                            SALE
+                          </span>
+                        </div>
                       </div>
                       <div className="product__card--content text-center">
                         <span className="product__card--meta__tag">
                           Watch,Woman
                         </span>
                         <h3 className="product__card--title">
-                          <a href="product-details.html">
-                            Lorem ipsum dolor sit.
-                          </a>
+                          <a href="product-details.html">Advanced To Watch </a>
                         </h3>
                         <div className="product__card--price">
-                          <span className="current__price">$278</span>
+                          <span className="current__price">$245</span>
                           <span className="price__divided" />
-                          <span className="old__price"> $376</span>
+                          <span className="old__price"> $356</span>
+                        </div>
+                        <a
+                          className="product__card--btn primary__btn"
+                          href="cart.html"
+                        >
+                          Add To Card
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                  <div className="col custom-col-2 mb-30 d-sm-block d-lg-none d-xl-block">
+                  <article className="product__card">
+                      <div className="product__card--thumbnail">
+                        <a
+                          className="product__card--thumbnail__link display-block"
+                          href="product-details.html"
+                        >
+                          <img
+                            className="product__card--thumbnail__img product__primary--img display-block"
+                            src="assets/img/product/product1.webp"
+                            alt="product-img"
+                          />
+                          <img
+                            className="product__card--thumbnail__img product__secondary--img display-block"
+                            src="assets/img/product/product2.webp"
+                            alt="product-img"
+                          />
+                        </a>
+                        <ul className="product__card--action d-flex align-items-center justify-content-center">
+                          <li className="product__card--action__list">
+                            <a
+                              className="product__card--action__btn"
+                              title="Wishlist"
+                              href="wishlist.html"
+                            >
+                              <svg
+                                className="product__card--action__btn--svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25.51"
+                                height="22.443"
+                                viewBox="0 0 512 512"
+                              >
+                                <path
+                                  d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={32}
+                                />
+                              </svg>
+                              <span className="visually-hidden">Wishlist</span>
+                            </a>
+                          </li>
+                          <li className="product__card--action__list">
+                            <a
+                              className="product__card--action__btn"
+                              title="Quick View"
+                              data-open="modal1"
+                              href="javascript:void(0)"
+                            >
+                              <svg
+                                className="product__card--action__btn--svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24.51"
+                                height="22.443"
+                                viewBox="0 0 512 512"
+                              >
+                                <path
+                                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeMiterlimit={10}
+                                  strokeWidth={32}
+                                />
+                                <path
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeLinecap="round"
+                                  strokeMiterlimit={10}
+                                  strokeWidth={32}
+                                  d="M338.29 338.29L448 448"
+                                />
+                              </svg>
+                              <span className="visually-hidden">
+                                Quick View
+                              </span>
+                            </a>
+                          </li>
+                          <li className="product__card--action__list">
+                            <a
+                              className="product__card--action__btn"
+                              title="Compare"
+                              href="compare.html"
+                            >
+                              <svg
+                                className="product__card--action__btn--svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="21.51"
+                                height="21.443"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
+                              </svg>
+                              <span className="visually-hidden">Compare</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div className="product__badge">
+                          <span className="product__badge--items sale">
+                            SALE
+                          </span>
+                        </div>
+                      </div>
+                      <div className="product__card--content text-center">
+                        <span className="product__card--meta__tag">
+                          Watch,Woman
+                        </span>
+                        <h3 className="product__card--title">
+                          <a href="product-details.html">Advanced To Watch </a>
+                        </h3>
+                        <div className="product__card--price">
+                          <span className="current__price">$245</span>
+                          <span className="price__divided" />
+                          <span className="old__price"> $356</span>
                         </div>
                         <a
                           className="product__card--btn primary__btn"
