@@ -174,7 +174,7 @@ const Header = () => {
                   <ul className="d-flex">
                     <li className="header__menu--items">
                       <Link className="header__menu--link" to="/">
-                        Home <span className="menu__plus--icon"></span>
+                        Home <span className="menu__plus--icon">+</span>
                       </Link>
                       
                     </li>
