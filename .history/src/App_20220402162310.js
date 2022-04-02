@@ -26,7 +26,6 @@ import ProductGallery from "./components/ProductGallery";
 import ProductHorizantal from "./components/ProductHorizantal";
 import Contactus from "./components/Contactus";
 import Wishlist from "./components/Wishlist";
-import Compare from "./components/Compare"
 
 function App() {
   return (
@@ -55,9 +54,6 @@ function App() {
         <Route path="/blogdetails">
           <BlogDetails />
         </Route>
-        <Route path="/comapare">
-        <Compare />
-      </Route>
         <Route path="/cart">
           <Cart />
         </Route>

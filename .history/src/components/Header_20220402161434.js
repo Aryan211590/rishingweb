@@ -190,34 +190,34 @@ const Header = () => {
                             <li className="header__mega--sub__menu_li">
                               <Link
                                 className="header__mega--sub__menu--title"
-                                to="/shop-left-sidebar"
+                                to="/shop"
                               >
                                 Shop Left Sidebar
                               </Link>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/shop-right-sidebar"
+                                href="shop-right-sidebar.html"
                               >
                                 Shop Right Sidebar
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/shop-grid"
+                                href="shop-grid.html"
                               >
                                 Shop Grid
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/shop-grid-list"
+                                href="shop-grid-list.html"
                               >
                                 Shop Grid List
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
                               <Link
@@ -235,189 +235,49 @@ const Header = () => {
                           </span>
                           <ul className="header__mega--sub__menu">
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/product-details"
+                                href="product-details.html"
                               >
                                 Standard Product
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/product-video"
+                                href="product-video.html"
                               >
                                 Video Product
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/product-horizontal"
+                                href="product-horizontal.html"
                               >
                                 Product Horizontal
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
                                 href="product-left-sidebar.html"
                               >
                                 Product Left Sidebar
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
                                 href="product-gallery.html"
                               >
                                 Product Gallery
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="header__mega--menu__li">
-                          <span className="header__mega--subtitle">
-                            Column Three
-                          </span>
-                          <ul className="header__mega--sub__menu">
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                href="/myaccount"
-                              >
-                                My Account
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/my-account-2"
-                              >
-                                My Account 2
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="*"
-                              >
-                                404 Page
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/login"
-                              >
-                                Login Page
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/faq"
-                              >
-                                Faq Page
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="header__mega--menu__li">
-                          <span className="header__mega--subtitle">
-                            Column Four
-                          </span>
-                          <ul className="header__mega--sub__menu">
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/compare"
-                              >
-                                Compare Pages
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/cart"
-                              >
-                                Cart Page
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/checkout"
-                              >
-                                Checkout page
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/wishlist"
-                              >
-                                Wishlist Page
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/Error-404"
-                              >
-                                Error Page
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="header__mega--menu__li">
-                          <span className="header__mega--subtitle">
-                            Column Five
-                          </span>
-                          <ul className="header__mega--sub__menu">
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/about"
-                              >
-                                About Us
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/contact-us"
-                              >
-                                Contact Us
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/privacy-policy"
-                              >
-                                Privacy Policy
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/faq"
-                              >
-                                Frequently
-                              </Link>
-                            </li>
-                            <li className="header__mega--sub__menu_li">
-                              <Link
-                                className="header__mega--sub__menu--title"
-                                to="/login"
-                              >
-                                Register
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </li>
                        
+                      
                       </ul>
                     </li>
                     <li className="header__menu--items">
@@ -471,27 +331,27 @@ const Header = () => {
                           </Link>
                         </li>
                         <li className="header__sub--menu__items">
-                          <Link
-                            to="/login"
+                          <a
+                            href="login.html"
                             className="header__sub--menu__link"
                           >
                             Login Page
-                          </Link>
+                          </a>
                         </li>
                         <li className="header__sub--menu__items">
-                          <Link
-                            to="Error404"
+                          <a
+                            href="404.html"
                             className="header__sub--menu__link"
                           >
                             Error Page
-                          </Link>
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li className="header__menu--items">
-                      <Link className="header__menu--link" to="/contact-us">
-                        Contact
-                      </Link>
+                      <a className="header__menu--link" href="contact.html">
+                        Contact{" "}
+                      </a>
                     </li>
                   </ul>
                 </nav>
