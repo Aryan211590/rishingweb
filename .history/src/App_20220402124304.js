@@ -62,18 +62,18 @@ function App() {
         <Route path="/product-details">
           <ProductDetails />
         </Route>
-        {/* <Route path="/product-gallery">
-          <ProductGallery />
-        </Route>
-        <Route path="/product-horizontal">
-          <ProdductHorizontal />
-        </Route>
-        <Route path="/product-left-sidebar">
-          <ProductLeftSidebar />
-        </Route>
-        <Route path="/product-video">
-          <ProductVideo />
-  </Route>*/}
+        <Route path="/product-gallery">
+        <ProductGallery />
+      </Route>
+      <Route path="/product-horizontal">
+      <ProdductHorizontal />
+    </Route>
+    <Route path="/product-left-sidebar">
+    <ProductLeftSidebar/>
+  </Route>
+    <Route path="/product-video">
+    <ProductVideo />
+  </Route>
         <Route path="/shop">
           <Shop />
         </Route>
@@ -89,7 +89,7 @@ function App() {
         <Route path="/shoprightsidebar">
           <Shoprightsidebar />
         </Route>
-
+      
         <Route exact path="*">
           <ErrorPage />
         </Route>

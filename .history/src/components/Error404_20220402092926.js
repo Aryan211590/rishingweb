@@ -40,7 +40,7 @@ const ErrorPage = () => {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi animi aliquid minima assumenda.
               </p>
-              <Link className="error__content--btn primary__btn" to="/">Back To Home</Link>
+              <a className="error__content--btn primary__btn" href="index.html">Back To Home</a>
             </div>
           </div>
         </div>
