@@ -15,6 +15,11 @@ import Myaccount from "./components/Myaccount";
 import Portfolio from "./components/Portfolio";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import ProductDetails from "./components/ProductDetails";
+import Shop from "./components/Shop";
+import Shopgrid from "./components/Shopgrid";
+import Shoplist from "./components/Shoplist";
+import Shopgridlist from "./components/Shopgridlist";
+import Shoprightsidebar from "./components/Shoprightsidebar";
 
 function App() {
   return (
@@ -52,11 +57,26 @@ function App() {
           <Portfolio />
         </Route>
         <Route path="/privacy-policy">
-        <PrivacyPolicy />
-      </Route>
-      <Route path="/product-details">
-        <ProductDetails />
-      </Route>
+          <PrivacyPolicy />
+        </Route>
+        <Route path="/product-details">
+          <ProductDetails />
+        </Route>
+        <Route path="shop">
+          <Shop />
+        </Route>
+        <Route path="/shopgrid">
+          <Shopgrid />
+        </Route>
+        <Route path="/shoplist">
+          <Shoplist />
+        </Route>
+        <Route path="/shopgridlist">
+          <Shopgridlist />
+        </Route>
+        <Route path="/shoprightsidebar">
+          <Shoprightsidebar />
+        </Route>
         <Route exact path="*">
           <ErrorPage />
         </Route>
