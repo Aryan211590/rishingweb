@@ -181,6 +181,7 @@ const Header = () => {
                       <Link className="header__menu--link" to="/shop">
                         Shop <span className="menu__plus--icon">+</span>
                       </Link>
+<<<<<<< HEAD
                       <ul className="header__mega--menu d-flex">
                         <li className="header__mega--menu__li">
                           <span className="header__mega--subtitle">
@@ -440,6 +441,9 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
+=======
+        
+>>>>>>> 020960b670ff35e5baadf6a8bdbce4259151ce49
                     </li>
                     <li className="header__menu--items">
                       <Link className="header__menu--link" to="/about">
