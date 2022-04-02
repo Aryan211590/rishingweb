@@ -36,7 +36,7 @@ function App() {
         <Route path="/blog">
           <Blog />
         </Route>
-        {/* <Route path="/blogdetails">
+        <Route path="/blogdetails">
           <BlogDetails />
         </Route>
         <Route path="/cart">
@@ -56,7 +56,7 @@ function App() {
         </Route>
         <Route path="/contactus">
           <Contactus />
-        </Route> */}
+        </Route>
         <Route path="*">
           <ErrorPage />
         </Route>
