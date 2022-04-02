@@ -100,7 +100,7 @@ function App() {
           <Shoprightsidebar />
         </Route>
         <Route path="/wishlist">
-        <Wishlist />
+      <Wishlist/>
       </Route>
 
         <Route exact path="*">

@@ -2,6 +2,7 @@ import React from "react";
 
 const Wishlist = () => {
   return (
+
     <div>
       <main className="main__content_wrapper">
         {/* Start breadcrumb section */}
@@ -915,4 +916,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export default Wishlist
