@@ -9,6 +9,7 @@ const Cart = () => {
   {/* Start header area */}
   
   {/* End header area */}
+  <div>
   <main className="main__content_wrapper">
     {/* Start breadcrumb section */}
     <section className="breadcrumb__section breadcrumb__bg">
@@ -276,25 +277,12 @@ const Cart = () => {
               </article>
             </div>
             <div className="col custom-col-2 mb-30">
-              <article className="product__card">
-                <div className="product__card--thumbnail product__swiper--column1 swiper">
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <a className="product__card--thumbnail__link display-block" href="product-details.html">
-                        <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product3.webp" alt="product-img" />
-                        <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product4.webp" alt="product-img" />
-                      </a>
-                    </div>
-                    <div className="swiper-slide">
-                      <a className="product__card--thumbnail__link display-block" href="product-details.html">
-                        <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product5.webp" alt="product-img" />
-                        <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product6.webp" alt="product-img" />
-                      </a>
-                      <div className="product__badge">
-                        <span className="product__badge--items sale">SALE</span>
-                      </div>
-                    </div>
-                  </div>
+            <article className="product__card">
+                <div className="product__card--thumbnail">
+                  <a className="product__card--thumbnail__link display-block" href="product-details.html">
+                    <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product1.webp" alt="product-img" />
+                    <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product2.webp" alt="product-img" />
+                  </a>
                   <ul className="product__card--action d-flex align-items-center justify-content-center">
                     <li className="product__card--action__list">
                       <a className="product__card--action__btn" title="Wishlist" href="wishlist.html">
@@ -317,12 +305,13 @@ const Cart = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="swiper__nav--btn swiper-button-next" />
-                  <div className="swiper__nav--btn swiper-button-prev" />
+                  <div className="product__badge">
+                    <span className="product__badge--items sale">SALE</span>
+                  </div>
                 </div>
                 <div className="product__card--content text-center">
                   <span className="product__card--meta__tag">Watch,Woman</span>
-                  <h3 className="product__card--title"><a href="product-details.html">Advanced Analytic </a></h3>
+                  <h3 className="product__card--title"><a href="product-details.html">Advanced To Watch </a></h3>
                   <div className="product__card--price">
                     <span className="current__price">$245</span>
                     <span className="price__divided" />
@@ -378,25 +367,12 @@ const Cart = () => {
               </article>
             </div>
             <div className="col custom-col-2 mb-30 d-sm-block d-lg-none d-xl-block">
-              <article className="product__card">
-                <div className="product__card--thumbnail product__swiper--column1 swiper">
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <a className="product__card--thumbnail__link display-block" href="product-details.html">
-                        <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product2.webp" alt="product-img" />
-                        <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product1.webp" alt="product-img" />
-                      </a>
-                    </div>
-                    <div className="swiper-slide">
-                      <a className="product__card--thumbnail__link display-block" href="product-details.html">
-                        <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product4.webp" alt="product-img" />
-                        <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product3.webp" alt="product-img" />
-                      </a>
-                      <div className="product__badge">
-                        <span className="product__badge--items sale">SALE</span>
-                      </div>
-                    </div>
-                  </div>
+            <article className="product__card">
+                <div className="product__card--thumbnail">
+                  <a className="product__card--thumbnail__link display-block" href="product-details.html">
+                    <img className="product__card--thumbnail__img product__primary--img display-block" src="assets/img/product/product1.webp" alt="product-img" />
+                    <img className="product__card--thumbnail__img product__secondary--img display-block" src="assets/img/product/product2.webp" alt="product-img" />
+                  </a>
                   <ul className="product__card--action d-flex align-items-center justify-content-center">
                     <li className="product__card--action__list">
                       <a className="product__card--action__btn" title="Wishlist" href="wishlist.html">
@@ -419,16 +395,17 @@ const Cart = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="swiper__nav--btn swiper-button-next" />
-                  <div className="swiper__nav--btn swiper-button-prev" />
+                  <div className="product__badge">
+                    <span className="product__badge--items sale">SALE</span>
+                  </div>
                 </div>
                 <div className="product__card--content text-center">
                   <span className="product__card--meta__tag">Watch,Woman</span>
-                  <h3 className="product__card--title"><a href="product-details.html">Lorem ipsum dolor sit.</a></h3>
+                  <h3 className="product__card--title"><a href="product-details.html">Advanced To Watch </a></h3>
                   <div className="product__card--price">
-                    <span className="current__price">$278</span>
+                    <span className="current__price">$245</span>
                     <span className="price__divided" />
-                    <span className="old__price"> $376</span>
+                    <span className="old__price"> $356</span>
                   </div>
                   <a className="product__card--btn primary__btn" href="cart.html">Add To Card</a>
                 </div>
@@ -777,12 +754,9 @@ const Cart = () => {
   {/* Quickview Wrapper End */}
   {/* Scroll top bar */}
   <button id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg" className="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={48} d="M112 244l144-144 144 144M256 120v292" /></svg></button>
-  {/* All Script JS Plugins here  */}
-  {/*  */}
-  {/*  */}
-  {/* Customscript js */}
-  {/* Mirrored from risingtheme.com/html/rokon-demo/rokon/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Apr 2022 06:13:41 GMT */}
 </div>
+
+ </div>
 
     </>
   )
