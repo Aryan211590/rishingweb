@@ -220,12 +220,12 @@ const Header = () => {
                               </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/shoplist"
+                                href="shop-list.html"
                               >
                                 Shop List
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </li>

@@ -25,7 +25,7 @@ import ProductLeftSidebar from "./components/ProductLeftSidebar";
 import ProductGallery from "./components/ProductGallery";
 import ProductHorizantal from "./components/ProductHorizantal";
 import Contactus from "./components/Contactus";
-import Wishlist from "./components/Wishlist";
+import Wishlist from "./components/wishlist";
 
 function App() {
   return (

@@ -222,7 +222,7 @@ const Header = () => {
                             <li className="header__mega--sub__menu_li">
                               <Link
                                 className="header__mega--sub__menu--title"
-                                to="/shoplist"
+                                to="/shop-list"
                               >
                                 Shop List
                               </Link>

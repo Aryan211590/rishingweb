@@ -220,12 +220,12 @@ const Header = () => {
                               </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/shoplist"
+                                href="shop-list.html"
                               >
                                 Shop List
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </li>
@@ -468,28 +468,28 @@ const Header = () => {
                           </Link>
                         </li>
                         <li className="header__sub--menu__items">
-                          <Link
-                            to="/cart"
+                          <a
+                            href="cart.html"
                             className="header__sub--menu__link"
                           >
                             Cart Page
-                          </Link>
+                          </a>
                         </li>
                         <li className="header__sub--menu__items">
-                          <Link
-                            to="/portfolio"
+                          <a
+                            href="portfolio.html"
                             className="header__sub--menu__link"
                           >
                             Portfolio Page
-                          </Link>
+                          </a>
                         </li>
                         <li className="header__sub--menu__items">
-                          <Link
-                            to="/wishlist"
+                          <a
+                            href="wishlist.html"
                             className="header__sub--menu__link"
                           >
                             Wishlist Page
-                          </Link>
+                          </a>
                         </li>
                         <li className="header__sub--menu__items">
                           <a

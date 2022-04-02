@@ -24,8 +24,6 @@ import ProductVideo from "./components/ProductVideo";
 import ProductLeftSidebar from "./components/ProductLeftSidebar";
 import ProductGallery from "./components/ProductGallery";
 import ProductHorizantal from "./components/ProductHorizantal";
-import Contactus from "./components/Contactus";
-import Wishlist from "./components/Wishlist";
 
 function App() {
   return (
@@ -37,10 +35,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
-        </Route>
-        
-        <Route path="/contact-us">
-          <Contactus />
         </Route>
         <Route path="/faq">
           <Faq />
@@ -99,9 +93,6 @@ function App() {
         <Route path="/shoprightsidebar">
           <Shoprightsidebar />
         </Route>
-        <Route path="/wishlist">
-        <Wishlist />
-      </Route>
 
         <Route exact path="*">
           <ErrorPage />
