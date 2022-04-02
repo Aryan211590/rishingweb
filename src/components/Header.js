@@ -178,9 +178,9 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="header__menu--items mega__menu--items">
-                      <a className="header__menu--link" href="shop.html">
+                      <Link className="header__menu--link" to="/shop">
                         Shop <span className="menu__plus--icon">+</span>
-                      </a>
+                      </Link>
                       <ul className="header__mega--menu d-flex">
                         <li className="header__mega--menu__li">
                           <span className="header__mega--subtitle">
@@ -188,12 +188,12 @@ const Header = () => {
                           </span>
                           <ul className="header__mega--sub__menu">
                             <li className="header__mega--sub__menu_li">
-                              <a
+                              <Link
                                 className="header__mega--sub__menu--title"
-                                href="shop.html"
+                                to="/shop"
                               >
                                 Shop Left Sidebar
-                              </a>
+                              </Link>
                             </li>
                             <li className="header__mega--sub__menu_li">
                               <a
