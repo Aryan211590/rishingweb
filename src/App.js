@@ -20,6 +20,10 @@ import Shopgrid from "./components/Shopgrid";
 import Shoplist from "./components/Shoplist";
 import Shopgridlist from "./components/Shopgridlist";
 import Shoprightsidebar from "./components/Shoprightsidebar";
+import ProductVideo from "./components/ProductVideo";
+import ProductLeftSidebar from "./components/ProductLeftSidebar";
+import ProductGallery from "./components/ProductGallery";
+import ProductHorizantal from "./components/ProductHorizantal";
 
 function App() {
   return (
@@ -62,18 +66,18 @@ function App() {
         <Route path="/product-details">
           <ProductDetails />
         </Route>
-        {/* <Route path="/product-gallery">
+        <Route path="/product-gallery">
           <ProductGallery />
         </Route>
         <Route path="/product-horizontal">
-          <ProdductHorizontal />
+        <ProductHorizantal/>
         </Route>
         <Route path="/product-left-sidebar">
           <ProductLeftSidebar />
         </Route>
         <Route path="/product-video">
           <ProductVideo />
-  </Route>*/}
+  </Route>
         <Route path="/shop">
           <Shop />
         </Route>
