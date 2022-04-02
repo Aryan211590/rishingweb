@@ -37,7 +37,7 @@ function App() {
         <Route path='/cart'>
           <Cart/>
         </Route>
-        <Route exact path="*">
+        <Route path="*">
         <ErrorPage/>
         </Route>
       </Switch>
