@@ -13,8 +13,6 @@ import Cart from "./components/Cart";
 import Login from "./components/Login";
 import Myaccount from "./components/Myaccount";
 import Portfolio from "./components/Portfolio";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -49,13 +47,7 @@ function App() {
           <Myaccount />
         </Route>
         <Route path="/portfolio">
-          <Portfolio />
-        </Route>
-        <Route path="/privacy-policy">
-        <PrivacyPolicy />
-      </Route>
-      <Route path="/product-details">
-        <ProductDetails />
+        <Portfolio />
       </Route>
         <Route exact path="*">
           <ErrorPage />

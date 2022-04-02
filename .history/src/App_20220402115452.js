@@ -14,7 +14,6 @@ import Login from "./components/Login";
 import Myaccount from "./components/Myaccount";
 import Portfolio from "./components/Portfolio";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -53,9 +52,6 @@ function App() {
         </Route>
         <Route path="/privacy-policy">
         <PrivacyPolicy />
-      </Route>
-      <Route path="/product-details">
-        <ProductDetails />
       </Route>
         <Route exact path="*">
           <ErrorPage />

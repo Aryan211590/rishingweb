@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Faq from "./components/Faq";
+import Breadcrumb from "./components/Faq";
 import Footer from "./components/Footer";
 // import Home from "./components/Home";
 import { Switch, Route, Link } from "react-router-dom";
@@ -13,8 +13,6 @@ import Cart from "./components/Cart";
 import Login from "./components/Login";
 import Myaccount from "./components/Myaccount";
 import Portfolio from "./components/Portfolio";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -27,8 +25,8 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/faq">
-          <Faq />
+        <Route path="/breadcrumb">
+          <Breadcrumb />
         </Route>
         <Route path="/about">
           <About />
@@ -49,13 +47,7 @@ function App() {
           <Myaccount />
         </Route>
         <Route path="/portfolio">
-          <Portfolio />
-        </Route>
-        <Route path="/privacy-policy">
-        <PrivacyPolicy />
-      </Route>
-      <Route path="/product-details">
-        <ProductDetails />
+        <Portfolio />
       </Route>
         <Route exact path="*">
           <ErrorPage />

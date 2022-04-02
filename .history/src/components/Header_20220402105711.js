@@ -282,12 +282,12 @@ const Header = () => {
                           </span>
                           <ul className="header__mega--sub__menu">
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                href="/myaccount"
+                                href="my-account.html"
                               >
                                 My Account
-                              </Link>
+                              </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
                               <a
@@ -314,12 +314,12 @@ const Header = () => {
                               </a>
                             </li>
                             <li className="header__mega--sub__menu_li">
-                              <Link
+                              <a
                                 className="header__mega--sub__menu--title"
-                                to="/faq"
+                                href="faq.html"
                               >
                                 Faq Page
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </li>
@@ -442,9 +442,48 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="header__menu--items">
-                      <Link className="header__menu--link" to="/about">
-                        About US
-                      </Link>
+                      <a className="header__menu--link" href="about.html">
+                        About US{" "}
+                      </a>
+                    </li>
+                    <li className="header__menu--items">
+                      <a className="header__menu--link" href="blog.html">
+                        Blog <span className="menu__plus--icon">+</span>{" "}
+                      </a>
+                      <ul className="header__sub--menu">
+                        <li className="header__sub--menu__items">
+                          <a
+                            href="blog.html"
+                            className="header__sub--menu__link"
+                          >
+                            Blog Grid
+                          </a>
+                        </li>
+                        <li className="header__sub--menu__items">
+                          <a
+                            href="blog-details.html"
+                            className="header__sub--menu__link"
+                          >
+                            Blog Details
+                          </a>
+                        </li>
+                        <li className="header__sub--menu__items">
+                          <a
+                            href="blog-left-sidebar.html"
+                            className="header__sub--menu__link"
+                          >
+                            Blog Left Sidebar
+                          </a>
+                        </li>
+                        <li className="header__sub--menu__items">
+                          <a
+                            href="blog-right-sidebar.html"
+                            className="header__sub--menu__link"
+                          >
+                            Blog Right Sidebar
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                     <li className="header__menu--items">
                       <a className="header__menu--link " href="#">
@@ -552,7 +591,7 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="header__account--items">
-                    <Link className="header__account--btn" to="/myaccount">
+                    <a className="header__account--btn" href="my-account.html">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26.51"
@@ -576,7 +615,7 @@ const Header = () => {
                         />
                       </svg>
                       <span className="visually-hidden">My Account</span>
-                    </Link>
+                    </a>
                   </li>
                   <li className="header__account--items">
                     <a
@@ -760,12 +799,12 @@ const Header = () => {
                           </a>
                         </li>
                         <li className="offcanvas__sub_menu_li">
-                          <Link
+                          <a
                             className="offcanvas__sub_menu_item"
-                            to="/faq"
+                            href="faq.html"
                           >
                             Faq Page
-                          </Link>
+                          </a>
                         </li>
                       </ul>
                     </li>
@@ -815,6 +854,42 @@ const Header = () => {
                           </a>
                         </li>
                       </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li className="offcanvas__menu_li">
+                  <a className="offcanvas__menu_item" href="#">
+                    Blog
+                  </a>
+                  <ul className="offcanvas__sub_menu">
+                    <li className="offcanvas__sub_menu_li">
+                      <a href="blog.html" className="offcanvas__sub_menu_item">
+                        Blog Grid
+                      </a>
+                    </li>
+                    <li className="offcanvas__sub_menu_li">
+                      <a
+                        href="blog-details.html"
+                        className="offcanvas__sub_menu_item"
+                      >
+                        Blog Details
+                      </a>
+                    </li>
+                    <li className="offcanvas__sub_menu_li">
+                      <a
+                        href="blog-left-sidebar.html"
+                        className="offcanvas__sub_menu_item"
+                      >
+                        Blog Left Sidebar
+                      </a>
+                    </li>
+                    <li className="offcanvas__sub_menu_li">
+                      <a
+                        href="blog-right-sidebar.html"
+                        className="offcanvas__sub_menu_item"
+                      >
+                        Blog Right Sidebar
+                      </a>
                     </li>
                   </ul>
                 </li>
