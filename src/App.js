@@ -62,7 +62,7 @@ function App() {
         <Route path="/product-details">
           <ProductDetails />
         </Route>
-        <Route path="shop">
+        <Route path="/shop">
           <Shop />
         </Route>
         <Route path="/shopgrid">
