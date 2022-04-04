@@ -8,7 +8,7 @@ const Login = () => {
 
   const emairef=useRef(null);
   const passwordref=useRef(null);
-
+  const history=useHistory()
   const signin=(e)=>{
 
 e.preventDefault();
@@ -16,6 +16,7 @@ e.preventDefault();
       emairef.current.value,
       passwordref.current.value).
       then((authUser)=>{
+        history.push('/')
         console.log(authUser)
       }).catch((error)=>{
         alert(error.message)
@@ -110,7 +111,7 @@ e.preventDefault();
                         type="submit"
                         onClick={signin}
                       >
-                     <Link to='/'>Login</Link>
+                     Login
                       </button>
                       <div className="account__login--divide">
                         <span className="account__login--divide__text">OR</span>
@@ -140,12 +141,12 @@ e.preventDefault();
                       </div>
                       <p className="account__login--signup__text">
                         Don,t Have an Account?
-                        <button type="submit">Sign up now</button>
+                        <button type="submit" onClick={()=>{history.push('/signup')}}>Sign up now</button>
                       </p>
                     </div>
                   </div>
                 </div>
-              <Signup/>              </div>
+                           </div>
             </div>
           </form>
         </div>

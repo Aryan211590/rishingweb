@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { auth } from '../firebase';
 
@@ -6,13 +7,14 @@ const Signup = () => {
     const emairef=useRef(null);
     const passwordref=useRef(null);
     const username=useRef('')
-
+const history=useHistory();
     const signup=(e)=>{
         e.preventDefault();
         auth.createUserWithEmailAndPassword(
           emairef.current.value,
           passwordref.current.value).
           then((authUser)=>{
+              history.push('/')
             console.log(authUser)
           }).catch((error)=>{
             alert(error.message)
