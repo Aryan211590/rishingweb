@@ -80,9 +80,22 @@ const Signup = () => {
               >
                 <Link to="/"> Submit &amp; Register</Link>
               </button>
-              </label>
               <span>Already have an account?<Link to="/login"><u>Go to Login</u></Link></span>
-           
+            </label>
+            <div className="account__login--remember position__relative">
+              <input
+                className="checkout__checkbox--input"
+                id="check2"
+                type="checkbox"
+              />
+              <span className="checkout__checkbox--checkmark" />
+              <label
+                className="checkout__checkbox--label login__remember--label"
+                htmlFor="check2"
+              >
+                I have read and agree to the terms &amp; conditions
+              </label>
+            </div>
           </div>
         </div>
       </div>
