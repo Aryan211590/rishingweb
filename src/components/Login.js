@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { auth } from "../firebase";
+import Signup from "./Signup";
 
 const Login = () => {
+
+  const emairef=useRef(null);
+  const passwordref=useRef(null);
+
+  const signin=(e)=>{
+
+e.preventDefault();
+    auth.signInWithEmailAndPassword(
+      emairef.current.value,
+      passwordref.current.value).
+      then((authUser)=>{
+        console.log(authUser)
+      }).catch((error)=>{
+        alert(error.message)
+      })
+  }
+
+ 
+
+  
   return (
     <div>
       {/* Start breadcrumb section */}
@@ -12,7 +36,7 @@ const Login = () => {
                 <h1 className="breadcrumb__content--title mb-10">Login Page</h1>
                 <ul className="breadcrumb__content--menu d-flex">
                   <li className="breadcrumb__content--menu__items">
-                    <a href="index.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb__content--menu__items">
                     <span className="text__secondary">Login Page</span>
@@ -27,7 +51,7 @@ const Login = () => {
       {/* Start login section  */}
       <div className="login__section section--padding">
         <div className="container">
-          <form action="#">
+          <form>
             <div className="login__section--inner">
               <div className="row row-cols-md-2 row-cols-1">
                 <div className="col">
@@ -46,6 +70,8 @@ const Login = () => {
                           className="account__login--input"
                           placeholder="Email Addres"
                           type="email"
+                          ref={emairef}
+                          required
                         />
                       </label>
                       <label>
@@ -53,6 +79,8 @@ const Login = () => {
                           className="account__login--input"
                           placeholder="Password"
                           type="password"
+                          ref={passwordref}
+                          required
                         />
                       </label>
                       <div className="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
@@ -80,8 +108,9 @@ const Login = () => {
                       <button
                         className="account__login--btn primary__btn"
                         type="submit"
+                        onClick={signin}
                       >
-                        Login
+                     <Link to='/'>Login</Link>
                       </button>
                       <div className="account__login--divide">
                         <span className="account__login--divide__text">OR</span>
@@ -116,71 +145,7 @@ const Login = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col">
-                  <div className="account__login register">
-                    <div className="account__login--header mb-25">
-                      <h2 className="account__login--header__title h3 mb-10">
-                        Create an Account
-                      </h2>
-                      <p className="account__login--header__desc">
-                        Register here if you are a new customer
-                      </p>
-                    </div>
-                    <div className="account__login--inner">
-                      <label>
-                        <input
-                          className="account__login--input"
-                          placeholder="Username"
-                          type="text"
-                        />
-                      </label>
-                      <label>
-                        <input
-                          className="account__login--input"
-                          placeholder="Email Addres"
-                          type="email"
-                        />
-                      </label>
-                      <label>
-                        <input
-                          className="account__login--input"
-                          placeholder="Password"
-                          type="password"
-                        />
-                      </label>
-                      <label>
-                        <input
-                          className="account__login--input"
-                          placeholder="Confirm Password"
-                          type="password"
-                        />
-                      </label>
-                      <label>
-                        <button
-                          className="account__login--btn primary__btn mb-10"
-                          type="submit"
-                        >
-                          Submit &amp; Register
-                        </button>
-                      </label>
-                      <div className="account__login--remember position__relative">
-                        <input
-                          className="checkout__checkbox--input"
-                          id="check2"
-                          type="checkbox"
-                        />
-                        <span className="checkout__checkbox--checkmark" />
-                        <label
-                          className="checkout__checkbox--label login__remember--label"
-                          htmlFor="check2"
-                        >
-                          I have read and agree to the terms &amp; conditions
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Signup/>              </div>
             </div>
           </form>
         </div>
