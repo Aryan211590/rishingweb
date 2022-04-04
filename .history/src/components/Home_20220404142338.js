@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BootstrapSlider from "./BootstrapSlider";
 
 const Home = () => {
   return (
     <div>
       <main className="main__content_wrapper">
-        <BootstrapSlider />
+
         {/* Start image with text section */}
         <section className="image__with--text__section section--padding">
           <div className="container">
