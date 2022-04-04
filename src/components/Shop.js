@@ -1329,49 +1329,23 @@ const Shop = () => {
                             </article>
                           </div>
                           <div className="col custom-col-2 mb-30">
-                            <article className="product__card">
-                              <div className="product__card--thumbnail product__swiper--column1 swiper">
-                                <div className="swiper-wrapper">
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product3.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product4.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                  </div>
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product5.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product6.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                    <div className="product__badge">
-                                      <span className="product__badge--items sale">
-                                        SALE
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
+                          <article className="product__card">
+                              <div className="product__card--thumbnail">
+                                <a
+                                  className="product__card--thumbnail__link display-block"
+                                  href="product-details.html"
+                                >
+                                  <img
+                                    className="product__card--thumbnail__img product__primary--img display-block"
+                                    src="assets/img/product/product1.webp"
+                                    alt="product-img"
+                                  />
+                                  <img
+                                    className="product__card--thumbnail__img product__secondary--img display-block"
+                                    src="assets/img/product/product2.webp"
+                                    alt="product-img"
+                                  />
+                                </a>
                                 <ul className="product__card--action d-flex align-items-center justify-content-center">
                                   <li className="product__card--action__list">
                                     <a
@@ -1457,8 +1431,11 @@ const Shop = () => {
                                     </a>
                                   </li>
                                 </ul>
-                                <div className="swiper__nav--btn swiper-button-next" />
-                                <div className="swiper__nav--btn swiper-button-prev" />
+                                <div className="product__badge">
+                                  <span className="product__badge--items sale">
+                                    SALE
+                                  </span>
+                                </div>
                               </div>
                               <div className="product__card--content text-center">
                                 <span className="product__card--meta__tag">
@@ -1466,7 +1443,7 @@ const Shop = () => {
                                 </span>
                                 <h3 className="product__card--title">
                                   <a href="product-details.html">
-                                    Advanced Analytic{" "}
+                                    Advanced To Watch{" "}
                                   </a>
                                 </h3>
                                 <div className="product__card--price">
@@ -1616,49 +1593,23 @@ const Shop = () => {
                             </article>
                           </div>
                           <div className="col custom-col-2 mb-30">
-                            <article className="product__card">
-                              <div className="product__card--thumbnail product__swiper--column1 swiper">
-                                <div className="swiper-wrapper">
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product2.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product1.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                  </div>
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product4.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product3.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                    <div className="product__badge">
-                                      <span className="product__badge--items sale">
-                                        SALE
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
+                          <article className="product__card">
+                              <div className="product__card--thumbnail">
+                                <a
+                                  className="product__card--thumbnail__link display-block"
+                                  href="product-details.html"
+                                >
+                                  <img
+                                    className="product__card--thumbnail__img product__primary--img display-block"
+                                    src="assets/img/product/product1.webp"
+                                    alt="product-img"
+                                  />
+                                  <img
+                                    className="product__card--thumbnail__img product__secondary--img display-block"
+                                    src="assets/img/product/product2.webp"
+                                    alt="product-img"
+                                  />
+                                </a>
                                 <ul className="product__card--action d-flex align-items-center justify-content-center">
                                   <li className="product__card--action__list">
                                     <a
@@ -1744,8 +1695,11 @@ const Shop = () => {
                                     </a>
                                   </li>
                                 </ul>
-                                <div className="swiper__nav--btn swiper-button-next" />
-                                <div className="swiper__nav--btn swiper-button-prev" />
+                                <div className="product__badge">
+                                  <span className="product__badge--items sale">
+                                    SALE
+                                  </span>
+                                </div>
                               </div>
                               <div className="product__card--content text-center">
                                 <span className="product__card--meta__tag">
@@ -1753,13 +1707,13 @@ const Shop = () => {
                                 </span>
                                 <h3 className="product__card--title">
                                   <a href="product-details.html">
-                                    Lorem ipsum dolor sit.
+                                    Advanced To Watch{" "}
                                   </a>
                                 </h3>
                                 <div className="product__card--price">
-                                  <span className="current__price">$278</span>
+                                  <span className="current__price">$245</span>
                                   <span className="price__divided" />
-                                  <span className="old__price"> $376</span>
+                                  <span className="old__price"> $356</span>
                                 </div>
                                 <a
                                   className="product__card--btn primary__btn"
@@ -1771,7 +1725,7 @@ const Shop = () => {
                             </article>
                           </div>
                           <div className="col custom-col-2 mb-30">
-                            <article className="product__card">
+                          <article className="product__card">
                               <div className="product__card--thumbnail">
                                 <a
                                   className="product__card--thumbnail__link display-block"
@@ -1779,20 +1733,15 @@ const Shop = () => {
                                 >
                                   <img
                                     className="product__card--thumbnail__img product__primary--img display-block"
-                                    src="assets/img/product/product4.webp"
+                                    src="assets/img/product/product1.webp"
                                     alt="product-img"
                                   />
                                   <img
                                     className="product__card--thumbnail__img product__secondary--img display-block"
-                                    src="assets/img/product/product3.webp"
+                                    src="assets/img/product/product2.webp"
                                     alt="product-img"
                                   />
                                 </a>
-                                <div className="product__badge">
-                                  <span className="product__badge--items sale">
-                                    SALE
-                                  </span>
-                                </div>
                                 <ul className="product__card--action d-flex align-items-center justify-content-center">
                                   <li className="product__card--action__list">
                                     <a
@@ -1878,6 +1827,11 @@ const Shop = () => {
                                     </a>
                                   </li>
                                 </ul>
+                                <div className="product__badge">
+                                  <span className="product__badge--items sale">
+                                    SALE
+                                  </span>
+                                </div>
                               </div>
                               <div className="product__card--content text-center">
                                 <span className="product__card--meta__tag">
@@ -1885,14 +1839,13 @@ const Shop = () => {
                                 </span>
                                 <h3 className="product__card--title">
                                   <a href="product-details.html">
-                                    {" "}
-                                    Advanced Analytic
+                                    Advanced To Watch{" "}
                                   </a>
                                 </h3>
                                 <div className="product__card--price">
-                                  <span className="current__price">$220</span>
+                                  <span className="current__price">$245</span>
                                   <span className="price__divided" />
-                                  <span className="old__price"> $325</span>
+                                  <span className="old__price"> $356</span>
                                 </div>
                                 <a
                                   className="product__card--btn primary__btn"
@@ -2290,54 +2243,23 @@ const Shop = () => {
                             </article>
                           </div>
                           <div className="col custom-col-2 mb-30 d-lg-none d-md-block d-sm-none">
-                            <article className="product__card">
-                              <div className="product__card--thumbnail product__swiper--column1 swiper">
-                                <div className="swiper-wrapper">
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product1.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product2.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                    <div className="product__badge">
-                                      <span className="product__badge--items sale">
-                                        SALE
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div className="swiper-slide">
-                                    <a
-                                      className="product__card--thumbnail__link display-block"
-                                      href="product-details.html"
-                                    >
-                                      <img
-                                        className="product__card--thumbnail__img product__primary--img display-block"
-                                        src="assets/img/product/product4.webp"
-                                        alt="product-img"
-                                      />
-                                      <img
-                                        className="product__card--thumbnail__img product__secondary--img display-block"
-                                        src="assets/img/product/product3.webp"
-                                        alt="product-img"
-                                      />
-                                    </a>
-                                    <div className="product__badge">
-                                      <span className="product__badge--items sale">
-                                        SALE
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
+                          <article className="product__card">
+                              <div className="product__card--thumbnail">
+                                <a
+                                  className="product__card--thumbnail__link display-block"
+                                  href="product-details.html"
+                                >
+                                  <img
+                                    className="product__card--thumbnail__img product__primary--img display-block"
+                                    src="assets/img/product/product1.webp"
+                                    alt="product-img"
+                                  />
+                                  <img
+                                    className="product__card--thumbnail__img product__secondary--img display-block"
+                                    src="assets/img/product/product2.webp"
+                                    alt="product-img"
+                                  />
+                                </a>
                                 <ul className="product__card--action d-flex align-items-center justify-content-center">
                                   <li className="product__card--action__list">
                                     <a
@@ -2423,8 +2345,11 @@ const Shop = () => {
                                     </a>
                                   </li>
                                 </ul>
-                                <div className="swiper__nav--btn swiper-button-next" />
-                                <div className="swiper__nav--btn swiper-button-prev" />
+                                <div className="product__badge">
+                                  <span className="product__badge--items sale">
+                                    SALE
+                                  </span>
+                                </div>
                               </div>
                               <div className="product__card--content text-center">
                                 <span className="product__card--meta__tag">
