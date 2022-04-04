@@ -556,11 +556,11 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className="header__account--items">
-                    <Link className="header__account--btn" to="/signup">
-                      <img src="assets/img/signup.png" width="28" />
-                      <span className="visually-hidden">signUP</span>
-                    </Link>
-                  </li>
+                  <Link className="header__account--btn" to="/myaccount">
+                   <img src="assets/img/signup.png" width={1}/>
+                    <span className="visually-hidden">signUP</span>
+                  </Link>
+                </li>
                   <li className="header__account--items">
                     <a
                       className="header__account--btn minicart__open--btn"

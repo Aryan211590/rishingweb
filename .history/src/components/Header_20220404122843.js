@@ -556,7 +556,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className="header__account--items">
-                    <Link className="header__account--btn" to="/signup">
+                    <Link className="header__account--btn" to="/myaccount">
                       <img src="assets/img/signup.png" width="28" />
                       <span className="visually-hidden">signUP</span>
                     </Link>
