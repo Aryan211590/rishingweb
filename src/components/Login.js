@@ -1,31 +1,51 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { auth } from "../firebase";
-import Signup from "./Signup";
+import { login } from "../features/userSlice";
+import { auth, googleProvider } from "../firebase";
+
 
 const Login = () => {
 
-  const emairef=useRef(null);
-  const passwordref=useRef(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const history=useHistory()
-  const signin=(e)=>{
+  const dispatch=useDispatch()
 
+
+  const signin=(e)=>{
 e.preventDefault();
-    auth.signInWithEmailAndPassword(
-      emairef.current.value,
-      passwordref.current.value).
-      then((authUser)=>{
+    auth.signInWithEmailAndPassword(email,password)
+      .then((userAuth)=>{
+        dispatch(login({
+          email: userAuth.user.email,
+          uid: userAuth.user.uid,
+          displayName: userAuth.user.displayName,
+          profileUrl: userAuth.user.photoURL,
+        }))
         history.push('/')
-        console.log(authUser)
+        console.log(userAuth)
       }).catch((error)=>{
         alert(error.message)
       })
   }
 
- 
 
-  
+  const signInWithGoogle = (e) => {
+    e.preventDefault();
+    auth.signInWithPopup(googleProvider)
+    .then((result) => {
+        dispatch(login({
+            email: result.user.email,
+            uid: result.user.uid,
+            displayName: result.user.displayName,
+            profileUrl: result.user.photoURL,
+            }))
+            console.log(result)
+            history.push('/')
+        }).catch((error) => alert(error.message));
+};
   return (
     <div>
       {/* Start breadcrumb section */}
@@ -71,8 +91,9 @@ e.preventDefault();
                           className="account__login--input"
                           placeholder="Email Addres"
                           type="email"
-                          ref={emairef}
-                          required
+                          onChange={(e)=>setEmail(e.target.value)}
+                         value={email}
+                       
                         />
                       </label>
                       <label>
@@ -80,8 +101,9 @@ e.preventDefault();
                           className="account__login--input"
                           placeholder="Password"
                           type="password"
-                          ref={passwordref}
-                          required
+                          onChange={(e)=>{setPassword(e.target.value)}}
+                         value={password}
+                         
                         />
                       </label>
                       <div className="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
@@ -113,6 +135,7 @@ e.preventDefault();
                       >
                      Login
                       </button>
+                      <button type="submit" onClick={signInWithGoogle}> Join with Google</button>
                       <div className="account__login--divide">
                         <span className="account__login--divide__text">OR</span>
                       </div>

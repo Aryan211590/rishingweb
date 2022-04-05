@@ -1,26 +1,43 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { login } from "../features/userSlice";
 import { auth } from "../firebase";
 
 
 const Signup = () => {
+
+  const [username,setUserName]=useState("")
   const [email,setEmail]=useState("");
   const[password,setPassword]=useState("")
-  const [username,setUserName]=useState("")
   const history = useHistory();
+  const dispatch=useDispatch();
 
+ 
 
-  const signup = (e) => {
+  const register = (e) => {
     e.preventDefault();
    
+      if(!username){
+        return alert("Please Enter a Valid Name")
+      }
+    
+  
+  
     auth
       .createUserWithEmailAndPassword(email,password)
-      .then((authUser) => {
+     .then((authUser)=>{
+              dispatch(login({
+          email:authUser.user.email,
+          uid: authUser.user.uid,
+          displayName:username,
+          profileUrl: authUser.user.photoURL,
+        }))
         history.push("/");
         alert("welcome");
-        console.log(authUser);
+        console.log(authUser)
       })
       .catch((error) => {
         alert(error.message);
@@ -82,7 +99,7 @@ const Signup = () => {
             <label>
               <button
                 className="account__login--btn primary__btn mb-10"
-                onClick={signup}
+                onClick={register}
               >
                 <Link to="/"> Submit &amp; Register</Link>
               </button>
