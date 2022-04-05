@@ -1,7 +1,6 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-
     apiKey: "AIzaSyBcZFSMwxo7gf8YF0PjqOkPjX_kOEZDAP8",
     authDomain: "rising-b7c20.firebaseapp.com",
     projectId: "rising-b7c20",
@@ -13,8 +12,7 @@ const firebaseConfig = {
   const firebaseApp=firebase.initializeApp(firebaseConfig);
   const db=firebaseApp.firestore();
   const auth=firebase.auth();
-  const googleProvider = new firebase.auth.GoogleAuthProvider()
 
   export default db;
-export {auth,googleProvider};
+export {auth};
   
