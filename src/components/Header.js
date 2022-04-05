@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { logout } from "../features/userSlice";
+import { auth } from "../firebase";
 
 const Header = () => {
+
+
+ 
+  const dispatch=useDispatch();
+  const history=useHistory();
+
+  const logoutOfApp = () => {
+    alert("Sure to Signout!")
+		dispatch(logout())
+		auth.signOut();  
+    history.push('/signup')
+		setTimeout(() => {     
+		window.location.reload(true);
+		}, 1);
+	}
+ 
   return (
     <div>
       {/* Start header area */}
@@ -27,6 +47,7 @@ const Header = () => {
                       strokeWidth={32}
                     />
                   </svg>
+                  
                   <a href="tel:+8543553004">+8543553004</a>
                 </li>
                 <li className="header__contact--info__list text-white">
@@ -418,7 +439,7 @@ const Header = () => {
                           </ul>
                         </li>
                       </ul>
-                    </li>
+                       </li>
                     <li className="header__menu--items">
                       <Link className="header__menu--link" to="/about">
                         About US
@@ -492,6 +513,7 @@ const Header = () => {
                       </Link>
                     </li>
                   </ul>
+                 
                 </nav>
               </div>
               <div className="header__account">
@@ -555,12 +577,18 @@ const Header = () => {
                       <span className="visually-hidden">My Account</span>
                     </Link>
                   </li>
-                  <li className="header__account--items">
-                    <Link className="header__account--btn" to="/signup">
+                  <li className="header__account--items"><Link className="header__account--btn" to="/signup">
                       <img src="assets/img/signup.png" width="28" />
                       <span className="visually-hidden">signUP</span>
-                    </Link>
+                    </Link></li>
+                    <li className="header__account--items">
+                      <Link>
+                     <img width="28" 
+                      src="https://cdn.iconscout.com/icon/premium/png-256-thumb/logout-2030711-1713351.png" onClick={logoutOfApp}/>
+                   </Link>
                   </li>
+               
+                   
                   <li className="header__account--items">
                     <a
                       className="header__account--btn minicart__open--btn"
@@ -583,9 +611,10 @@ const Header = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+                            </div>
             </div>
           </div>
+          
         </div>
         {/* End main header */}
         {/* Start Offcanvas header menu */}

@@ -134,8 +134,7 @@ e.preventDefault();
                         onClick={signin}
                       >
                      Login
-                      </button>
-                      <button type="submit" onClick={signInWithGoogle}> Join with Google</button>
+                      </button>                   
                       <div className="account__login--divide">
                         <span className="account__login--divide__text">OR</span>
                       </div>
@@ -151,6 +150,7 @@ e.preventDefault();
                           className="account__social--link google"
                           target="_blank"
                           href="https://www.google.com/"
+                          onClick={signInWithGoogle}
                         >
                           Google
                         </a>
