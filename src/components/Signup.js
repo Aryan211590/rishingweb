@@ -1,20 +1,22 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
+
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { auth } from "../firebase";
 
+
 const Signup = () => {
-  const emairef = useRef(null);
-  const passwordref = useRef(null);
-  const username = useRef("");
+  const [email,setEmail]=useState("");
+  const[password,setPassword]=useState("")
+  const [username,setUserName]=useState("")
   const history = useHistory();
+
+
   const signup = (e) => {
     e.preventDefault();
+   
     auth
-      .createUserWithEmailAndPassword(
-        emairef.current.value,
-        passwordref.current.value
-      )
+      .createUserWithEmailAndPassword(email,password)
       .then((authUser) => {
         history.push("/");
         alert("welcome");
@@ -42,7 +44,8 @@ const Signup = () => {
                 className="account__login--input"
                 placeholder="Username"
                 type="text"
-                ref={username.current.value}
+                onChange={(e)=>setUserName(e.target.value)}
+                value={username}
                 required
               />
             </label>
@@ -51,7 +54,8 @@ const Signup = () => {
                 className="account__login--input"
                 placeholder="Email Addres"
                 type="email"
-                ref={emairef}
+                onChange={(e)=>setEmail(e.target.value)}
+                value={email}
                 required
               />
             </label>
@@ -60,7 +64,8 @@ const Signup = () => {
                 className="account__login--input"
                 placeholder="Password"
                 type="password"
-                ref={passwordref}
+                onChange={(e)=>setPassword(e.target.value)}
+                value={password}
                 required
               />
             </label>
@@ -69,7 +74,8 @@ const Signup = () => {
                 className="account__login--input"
                 placeholder="Confirm Password"
                 type="password"
-                ref={passwordref}
+                onChange={(e)=>setPassword(e.target.value)}
+                value={password}
                 required
               />
             </label>
