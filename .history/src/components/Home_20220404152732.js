@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
       <main className="main__content_wrapper">
+        <BootstrapSlider />
         <Slider/>
         {/* Start image with text section */}
         <section className="image__with--text__section section--padding">
