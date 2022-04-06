@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { login } from "../../features/userSlice";
+import { login } from "../../Redux/features/userSlice";
 import { auth, googleProvider } from "../../firebase";
 
 
