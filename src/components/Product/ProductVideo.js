@@ -1,5 +1,5 @@
 import React from 'react'
-import ShopFooter from './ShopFooter'
+import ShopFooter from '../Shop/ShopFooter'
 
 const ProductVideo = () => {
   return (

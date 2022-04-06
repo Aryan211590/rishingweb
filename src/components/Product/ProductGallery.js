@@ -1,5 +1,5 @@
-import React from "react";
-import ShopFooter from "./ShopFooter";
+import React from "react"
+import ShopFooter from "../Shop/ShopFooter";
 
 const ProductGallery = () => {
   return (
@@ -1847,7 +1847,7 @@ const ProductGallery = () => {
         </section>
         {/* End product section */}
       </main>
-      <ShopFooter />
+      <ShopFooter/>
     </>
   );
 };

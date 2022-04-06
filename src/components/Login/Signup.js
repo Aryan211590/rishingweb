@@ -3,8 +3,9 @@ import { useDispatch } from "react-redux";
 
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { login } from "../features/userSlice";
-import { auth } from "../firebase";
+import { login } from "../../features/userSlice";
+import { auth } from "../../firebase";
+
 
 
 const Signup = () => {
@@ -24,8 +25,6 @@ const Signup = () => {
         return alert("Please Enter a Valid Name")
       }
     
-  
-  
     auth
       .createUserWithEmailAndPassword(email,password)
      .then((authUser)=>{

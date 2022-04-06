@@ -1,34 +1,33 @@
-import "./App.css";
-import Header from "./components/Header";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
+import Footer from "./components/OtherPages/Footer";
 // import Home from "./components/Home";
-import { Switch, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import ErrorPage from "./components/Error404";
-import About from "./components/About";
-import Blog from "./components/Blog";
-import BlogDetails from "./components/BlogDetails";
-import Cart from "./components/Cart";
-import Login from "./components/Login";
-import Myaccount from "./components/Myaccount";
-import Portfolio from "./components/Portfolio";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import ProductDetails from "./components/ProductDetails";
-import Shop from "./components/Shop";
-import Shopgrid from "./components/Shopgrid";
-import Shoplist from "./components/Shoplist";
-import Shopgridlist from "./components/Shopgridlist";
-import Shoprightsidebar from "./components/Shoprightsidebar";
-import ProductVideo from "./components/ProductVideo";
-import ProductLeftSidebar from "./components/ProductLeftSidebar";
-import ProductGallery from "./components/ProductGallery";
-import ProductHorizantal from "./components/ProductHorizantal";
-import Contactus from "./components/Contactus";
-import Wishlist from "./components/Wishlist";
-import Checkout from "./components/Checkout"
-import Compare from "./components/Compare"
-import Signup from "./components/Signup";
+import { Switch, Route} from "react-router-dom";
+import About from "./components/OtherPages/About";
+import Cart from "./components/Cart/Cart";
+import Portfolio from "./components/OtherPages/Portfolio";
+import Blog from "./components/Blog/Blog";
+import BlogDetails from "./components/Blog/BlogDetails";
+import Shop from "./components/Shop/Shop";
+import Shopgrid from "./components/Shop/Shopgrid";
+import Shoplist from "./components/Shop/Shoplist";
+import Shopgridlist from "./components/Shop/Shopgridlist";
+import Shoprightsidebar from "./components/Shop/Shoprightsidebar";
+import ProductDetails from "./components/Product/ProductDetails";
+import ProductGallery from "./components/Product/ProductGallery";
+import ProductHorizantal from "./components/Product/ProductHorizantal";
+import ProductLeftSidebar from "./components/Product/ProductLeftSidebar";
+import ProductVideo from "./components/Product/ProductVideo";
+import Contactus from "./components/OtherPages/Contactus";
+import Home from "./components/OtherPages/Home";
+import PrivacyPolicy from "./components/OtherPages/PrivacyPolicy";
+import ErrorPage from "./components/OtherPages/Error404";
+import Faq from './components/OtherPages/Faq'
+import Signup from "./components/Login/Signup";
+import Login from "./components/Login/Login";
+import Checkout from "./components/Cart/Checkout";
+import Wishlist from "./components/Cart/Wishlist";
+import Compare from "./components/Cart/Compare";
+import Header from "./components/OtherPages/Header";
+import Myaccount from "./components/OtherPages/Myaccount";
 
 function App() {
   return (
@@ -39,84 +38,84 @@ function App() {
       {/*routes */}
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home/>
         </Route>
         
         <Route path="/contact-us">
-          <Contactus />
+          <Contactus/>
         </Route>
         <Route path="/faq">
-          <Faq />
+          <Faq/>
         </Route>
         <Route path="/about">
-          <About />
+          <About/>
         </Route>
         <Route path="/blog">
-          <Blog />
+          <Blog/>
         </Route>
         <Route path="/blogdetails">
-          <BlogDetails />
+          <BlogDetails/>
         </Route>
         <Route path="/compare">
-        <Compare />
+        <Compare/>
       </Route>
         <Route path="/cart">
-          <Cart />
+          <Cart/>
         </Route>
         <Route path="/checkout">
-          <Checkout />
+          <Checkout/>
         </Route>
         <Route path="/login">
-          <Login />
+          <Login/>
         </Route>
         <Route path="/signup">
-        <Signup />
+        <Signup/>
       </Route>
         <Route path="/myaccount">
-          <Myaccount />
+          <Myaccount/>
         </Route>
         <Route path="/portfolio">
           <Portfolio />
         </Route>
         <Route path="/privacy-policy">
-          <PrivacyPolicy />
+          <PrivacyPolicy/>
         </Route>
         <Route path="/product-details">
-          <ProductDetails />
+          <ProductDetails/>
         </Route>
         <Route path="/product-gallery">
-          <ProductGallery />
+          <ProductGallery/>
         </Route>
         <Route path="/product-horizontal">
-          <ProductHorizantal />
+          <ProductHorizantal/>
         </Route>
         <Route path="/product-left-sidebar">
-          <ProductLeftSidebar />
+          <ProductLeftSidebar/>
         </Route>
         <Route path="/product-video">
-          <ProductVideo />
+          <ProductVideo/>
         </Route>
         <Route path="/shop">
           <Shop />
         </Route>
         <Route path="/shop-grid">
-          <Shopgrid />
+          <Shopgrid/>
         </Route>
         <Route path="/shoplist">
-          <Shoplist />
+          <Shoplist/>
         </Route>
         <Route path="/shop-grid-list">
-          <Shopgridlist />
+          <Shopgridlist/>
         </Route>
         <Route path="/shop-right-sidebar">
-          <Shoprightsidebar />
+          <Shoprightsidebar/>
         </Route>
         <Route path="/wishlist">
       <Wishlist/>
       </Route>
 
         <Route exact path="*">
-          <ErrorPage />
+          <ErrorPage/>
         </Route>
       </Switch>
 

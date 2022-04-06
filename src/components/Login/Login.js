@@ -2,8 +2,9 @@ import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { login } from "../features/userSlice";
-import { auth, googleProvider } from "../firebase";
+import { login } from "../../features/userSlice";
+import { auth, googleProvider } from "../../firebase";
+
 
 
 const Login = () => {
@@ -12,7 +13,6 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const history=useHistory()
   const dispatch=useDispatch()
-
 
   const signin=(e)=>{
 e.preventDefault();
@@ -40,7 +40,7 @@ e.preventDefault();
             email: result.user.email,
             uid: result.user.uid,
             displayName: result.user.displayName,
-            profileUrl: result.user.photoURL,
+            profileUrl: result.user.photoURL  ,
             }))
             console.log(result)
             history.push('/')

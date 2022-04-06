@@ -2,26 +2,27 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { logout } from "../features/userSlice";
-import { auth } from "../firebase";
+import { logout } from "../../features/userSlice";
+import { auth } from "../../firebase";
 
 const Header = () => {
 
-
+const [show,setShow]=useState(false);
  
   const dispatch=useDispatch();
   const history=useHistory();
 
   const logoutOfApp = () => {
-    alert("Sure to Signout!")
 		dispatch(logout())
 		auth.signOut();  
+    setShow(true)
+    alert("Logout Sucessfully you will ce redirected to Login page")
     history.push('/signup')
 		setTimeout(() => {     
 		window.location.reload(true);
 		}, 1);
 	}
- 
+ console.log("user",show)
   return (
     <div>
       {/* Start header area */}
@@ -577,16 +578,16 @@ const Header = () => {
                       <span className="visually-hidden">My Account</span>
                     </Link>
                   </li>
-                  <li className="header__account--items"><Link className="header__account--btn" to="/signup">
+                  {show ?(<li className="header__account--items"><Link className="header__account--btn" to="/signup">
                       <img src="assets/img/signup.png" width="28" />
                       <span className="visually-hidden">signUP</span>
-                    </Link></li>
+                    </Link></li>):(
                     <li className="header__account--items">
                       <Link>
                      <img width="28" 
                       src="https://cdn.iconscout.com/icon/premium/png-256-thumb/logout-2030711-1713351.png" onClick={logoutOfApp}/>
                    </Link>
-                  </li>
+                  </li>)}
                
                    
                   <li className="header__account--items">
