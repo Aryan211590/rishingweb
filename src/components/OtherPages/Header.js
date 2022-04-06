@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { logout } from "../../features/userSlice";
+import { logout } from "../../Redux/features/userSlice";
 import { auth } from "../../firebase";
 
 const Header = () => {

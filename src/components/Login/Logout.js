@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../Nav'
 import './Logout.css'
 import { auth } from '../firebase'
-import { selectUser } from '../../features/userSlice'
+import { selectUser } from '../../Redux/features/userSlice'
 import { useSelector } from 'react-redux'
 
 const Logout = () => {
